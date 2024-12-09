@@ -10,28 +10,151 @@
     <h1>Calculator</h1>
     <section class="container">
       <section id="calculator">
-        <input type="text" />
+        <input type="text" id="display" readonly />
 
         <section id="button-container">
-          <button class="cal ci">C</button>
-          <button class="cal">1</button>
-          <button class="cal">2</button>
-          <button class="cal">+</button>
-          <button class="cal">3</button>
-          <button class="cal">4</button>
-          <button class="cal">-</button>
-          <button class="cal">5</button>
-          <button class="cal">6</button>
-          <button class="cal">*</button>
-          <button class="cal">7</button>
-          <button class="cal">8</button>
-          <button class="cal">/</button>
-          <button class="cal">=</button>
-          <button class="cal">9</button>
-          <button class="cal">0</button>
-          <button class="cal">.</button>
+          <button
+            class="cal ci"
+            onclick="
+            currentDisplay = '';
+            show();
+            "
+          >
+            C
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '1';
+          show();"
+          >
+            1
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '2';
+          show();"
+          >
+            2
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '+';
+          show();"
+          >
+            +
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '3';
+          show();"
+          >
+            3
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '4';
+          show();"
+          >
+            4
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '-';
+          show();"
+          >
+            -
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '5';
+          show();"
+          >
+            5
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '6';
+          show();"
+          >
+            6
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '*';
+          show();"
+          >
+            *
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '7';
+          show();"
+          >
+            7
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '8';
+          show();"
+          >
+            8
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '/';
+          show();"
+          >
+            /
+          </button>
+          <button
+            class="cal"
+            onclick="
+            let result = eval(currentDisplay);
+          currentDisplay = result;
+          show();"
+          >
+            =
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '9';
+          show();"
+          >
+            9
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '0';
+          show();"
+          >
+            0
+          </button>
+          <button
+            class="cal"
+            onclick="
+          currentDisplay = currentDisplay + '.';
+          show();"
+          >
+            .
+          </button>
         </section>
       </section>
     </section>
+
+    <script src="app.js"></script>
   </body>
 </html>
